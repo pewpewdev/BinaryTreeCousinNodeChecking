@@ -1,0 +1,17 @@
+AUTHORS OF DATASTRUCTURE and ALGORITHM PROJECT TITLED "FINDING THE COUSIN NODES OF A BINARY TREE" by group 6 :-  
+
+Arundhati Sensharma, MSAI22R005, arusensharma@gmail.com
+
+Chintapenta Surya Bharadwaja, MSCS22R003, chhsuryabharadwaja20@gmail.com
+
+Prerana Bora, MSAI22R013, preranabora12@gmail.com
+
+Ritik Sahu, MSCS22R012, ritiksahu26780@gmail.com
+
+Riga Suresh M, MSDS22R009, rigasureshm@gmail.com
+
+Adithya KP, MSAI22R001, adithyakp2001@gmail.com
+
+Suman Kumari, MSDS22R014, ssumankumarii1998@gmail.com
+
+Junais musthafa, MSDS22R007, junaismusthafa4477@gmail.com

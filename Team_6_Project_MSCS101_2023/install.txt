@@ -1,0 +1,35 @@
+How to use.
+This project is about the data structure, binary tree. In this project we want to construct a binary tree and write function for all traversal with and without recursion and also we want to check whether the given nodes are cousins or not. Also in addition to checking cousin nodes we also provide different function to check whether or not two nodes are siblings. There are total of 11 functions which are main , 1.Insert, 2.Recursive In-Order Traversal,3.Non-Recursive In-Order Traversal,4.Recursive Pre-Order Traversal,5.Non-Recursive Pre-Order Traversal,6.Recursive Post-Order Traversal, 7.Non-Recursive Post-Order Traversal,8.Check the level of a given node,9.Find whether two nodes are Cousins,10Find whether two nodes are Sibling. These are given inside a switch and will repeat after each process.
+
+To insert an element into a binary tree, start at the root node. If the root node is empty, insert the element as the root node and return. Then compare the value of the element to be inserted with the value of the current node. If the value is less than the current node, move to the left child. If the value is greater, move to the right child and If there is no left or right child, insert the element as a new left or right child. Repeat the process until the element is inserted.
+In recursive in-order traverse, if the current node is not none then it recursively call the in-order traversal function on the left child of the current node and process the data or print the value of the current node then it will recursively call the in-order traversal function on the right child of the current node.
+
+In non-recursive in-order traverse, we create an empty stack and set the current node to the root of the binary tree. if the current node is not null, push it onto the stack and move to its left child or if the current node is null and the stack is not empty, pop the top node from the stack, set it as the current node, and move to its right child. If the current node is not null and has no left child, print its value or if the current node is null and has no right child, print its value.it will repeat until the current node is null and the stack is empty.
+In pre-order traverse, if the current node is not none it will process the data or print the value of the current node and it recursively call the pre-order traversal function on the left , right child of the current node respectively
+
+In non-recursive pre-order traverse first we want to initialize an empty stack then we need to push the root of the binary tree onto the stack. if the stack is not empty, it will Pop the top element from the stack and process its data then If the popped node has a right , left child it will push it onto the stack.
+
+In post-order traverse, if the current node is not none , it recursively call the post-order traversal function on the left , right child of the current node respectively and it will process the data or print the value of the current node
+
+
+In non-recursive post-order traverse, we want to initialize two stacks then we need to push the root of the binary tree onto the first stack. If the stack is not empty, pop the element from first stack and push onto the second. If the popped node has a left, right child then push it onto the first stack. If the second stack is empty then pop top element from first stack and process its data.
+In level checking ,first we need to initialise a level counter to 1 and we want to check if the root of the binary tree is none then return 0.Also use a queue to keep track of nodes that need to be processed and initialise the queue with the root node. while the queue node is empty, dequeue the first node in the queue and store it in a temporary variable and if the temporary node is equal to the target node, return the level counter. If the temporary node has left, right child then enqueue into the queue and it will increment the level counter. If the target node is not found then it will return 0.
+
+To check whether two nodes are cousins or not, first we need to check the root of the binary tree none , it return false. Then we need to initialize two variables to store the depth of the two nodes
+and use a queue to keep track of nodes that need to be processed. Initialize the queue with a tuple containing the root node and a level counter set to 1. While the queue is not empty, then dequeue the first node in the queue and store it in a temporary variable. If the temporary
+node is equal to either of the target nodes, store its depth in the appropriate depth variable and then If both depth variables have been set, return True if they are equal and the parent nodes are different,
+otherwise return False. If the temporary node has a left, right child then enqueue it into the queue with the level counter incremented by 1. If the target node is not found it will return false.
+
+To check whether two nodes are siblings or not, first we need to check if either of the node is none then return false. Next we need to initialize a variable to store parent node of the first target node. Use a queue to keep track of nodes that need to be processed. Initialize the queue with a tuple containing the root node and its parent node. while the queue is not empty, then dequeue the first node in the queue and store it in a temporary variable. If the temporary node is equal to either of the target nodes, store its depth in the appropriate variable. If both parent nodes have been set, return True if they are equal, otherwise return False. If the temporary node has a left ,right child then enqueue it into the queue with its parent node set to the temporary node. If the target 
+is not found it will return false
+
+ 
+
+
+
+
+
+
+
+ 
+
